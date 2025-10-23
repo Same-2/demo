@@ -1,0 +1,30 @@
+{
+  "name": "demo-multi-nest",
+  "version": "0.0.1",
+  "description": "A NestJS monorepo with multiple applications.",
+  "private": true,
+  "scripts": {
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:app1": "nest start app1",
+    "start:dev:app1": "nest start app1 --watch",
+    "start:app2": "nest start app2",
+    "start:dev:app2": "nest start app2 --watch",
+    "build": "nest build"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/core": "^10.0.0",
+    "@nestjs/platform-express": "^10.0.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.8.0"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^10.0.0",
+    "@nestjs/schematics": "^10.0.0",
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.0.0"
+  }
+}
